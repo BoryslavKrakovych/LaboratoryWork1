@@ -41,9 +41,6 @@ public class StringCalculator {
 
         int total = 0;
         for (String n : split_numbers) {
-            if (n == end_index){
-                ValuesAfter.throwExceptionIfValue(n);
-            }
             Integer current = Integer.parseInt(n);
             if (current < 0) {
                 negative_numbers.add(current);
