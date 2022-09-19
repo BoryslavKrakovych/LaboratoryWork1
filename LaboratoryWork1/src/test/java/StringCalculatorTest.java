@@ -23,13 +23,6 @@ public class StringCalculatorTest {
     public void handleNewLines(){
         assertEquals(Calculate.add("10,20\n30"), 60);
     }
-    public void handleNewLines2(){
-        try {
-            Calculate.add("10,20,30,\n");
-        } catch (NegativeValues.NegativesNotAllowed e) {
-            assertEquals(e.getMessage(),"Error!");
-        }
-    }
     public void customDelimiter(){
         assertEquals(Calculate.add("//;\n1;2"), 3);
     }
